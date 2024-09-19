@@ -323,8 +323,8 @@ int main(void) {
 
 ### Results
 
-![image-20240919221201331](C:\Users\const\AppData\Roaming\Typora\typora-user-images\image-20240919221201331.png)
-[YouTube Video](https://youtu.be/ctv22elTqOc)
+![image-20240919221201331]([C:\Users\const\AppData\Roaming\Typora\typora-user-images\image-20240919221201331.png)
+[YouTube Video](https://youtu.be/ctv22elTqOc](https://github.com/jesse-kd/EC/blob/main/image-20240919221201331.png))
 
 
 
