@@ -338,14 +338,4 @@ int main(void) {
 
 2. What method of debouncing did this NUCLEO board use for the push-button(B1)?
 
-## Reference
-
-Complete list of all references used (github, blog, paper, etc)
-
-```
-
-```
-
-## Troubleshooting
-
-(Option) You can write a Troubleshooting section
+>Time delay method as it is easy to implement
