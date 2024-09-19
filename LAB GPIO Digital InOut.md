@@ -8,7 +8,7 @@
 
 **Github:** https://github.com/jesse-kd/EC.git
 
-**Demo Video:** [YouTube Video](https://youtu.be/ctv22elTqOc)
+**Demo Video:** [YouTube Video]((https://youtu.be/kw8cV17iACY))
 
 ## Introduction
 
@@ -333,7 +333,7 @@ int main(void) {
 ### Results
 
 ![image-20240919221201331](https://github.com/user-attachments/assets/c67d52f4-8e4d-4a56-bc55-1f8c5b41b97e)
-[YouTube Video](https://youtu.be/ctv22elTqOc)
+[YouTube Video](https://youtu.be/kw8cV17iACY)
 
 
 
