@@ -10,15 +10,13 @@
 
 **Demo Video:** [YouTube Video](https://youtu.be/ctv22elTqOc)
 
-**PDF version:**
-
 ## Introduction
 
 In this lab, use a simple program that toggles multiple LEDs with a push-button input. Create HAL drivers for GPIO digital in and out control and use the library.
 
 ### Requirement
 
-#### Hardware
+#### Hardware	
 
 - MCU
 
@@ -236,6 +234,9 @@ int GPIO_read(PinName_t pinName){
 ### Code
 
 ```
+PinName_t LED_pin = PA_5;
+PinName_t button_pin = PC_13;
+
 void setup(void);
 void delay_ms(int ms);
 	
@@ -246,14 +247,14 @@ int main(void) {
 	// Inifinite Loop ----------------------------------------------------------
 	while(1){
 			
-			if(GPIO_read(button_pin) == 0){
-				LED_State ^= 1;
-				GPIO_write(LED_pin, LED_State);
-				delay_ms(120);
-			} else {
-				GPIO_write(LED_pin, LED_State);
-				delay_ms(120);
-			}
+		if(GPIO_read(button_pin) == 0){		// Check if the button is pressed
+			LED_State ^= 1;					// Write the new state to the LED
+			GPIO_write(LED_pin, LED_State);
+			delay_ms(120);					// Debouncing delay
+		} else {							// If button is not pressed, keep the LED in its current state
+			GPIO_write(LED_pin, LED_State);
+			delay_ms(120);
+		}
 	}
 }
 ```
@@ -289,6 +290,12 @@ int main(void) {
 ### Code
 
 ```
+PinName_t LED_pin0 = PA_5;
+PinName_t LED_pin1 = PA_6;
+PinName_t LED_pin2 = PA_7;
+PinName_t LED_pin3 = PB_6;
+PinName_t button_pin = PC_13;
+
 void setup(void);
 void delay(int ms);
 	
@@ -299,15 +306,17 @@ int main(void) {
 	// Inifinite Loop ----------------------------------------------------------
 	while(1){
 		
-		if(GPIO_read(button_pin) == 0){
-			LED_State++;
-			if(LED_State > 4) LED_State = 1;
-			delay(200);
+		if(GPIO_read(button_pin) == 0){		// Check if the button is pressed
+			LED_State++;					// Increment LED state
+			if(LED_State > 4) LED_State = 1;// Reset state if it exceeds 4
+			delay(200);						// Debouncing delay
 		} else {
+			// Turn off all LEDs initially
 			GPIO_write(LED_pin0, 0);
 			GPIO_write(LED_pin1, 0);
 			GPIO_write(LED_pin2, 0);
 			GPIO_write(LED_pin3, 0);
+			// Turn on the appropriate LED based on the current state
 			if(LED_State == 1)
 				GPIO_write(LED_pin0, 1);
 			else if(LED_State == 2)
@@ -323,8 +332,8 @@ int main(void) {
 
 ### Results
 
-![image-20240919221201331]([C:\Users\const\AppData\Roaming\Typora\typora-user-images\image-20240919221201331.png)
-[YouTube Video](https://youtu.be/ctv22elTqOc](https://github.com/jesse-kd/EC/blob/main/image-20240919221201331.png))
+![image-20240919221201331](C:\Users\const\AppData\Roaming\Typora\typora-user-images\image-20240919221201331.png)
+[YouTube Video](https://youtu.be/ctv22elTqOc)
 
 
 
