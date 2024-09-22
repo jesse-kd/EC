@@ -102,7 +102,7 @@ Then, Check that the decoder chip works properly
 
 Circuit diagram
 
-> You need to include the circuit diagram in the report
+![1](https://github.com/user-attachments/assets/bd57357d-a65b-4a5d-8078-292e543748c6)
 
 ![img](https://ykkim.gitbook.io/~gitbook/image?url=https%3A%2F%2Fuser-images.githubusercontent.com%2F38373000%2F192134563-72f68b29-4127-42ac-b064-2eda95a9a52a.png&width=768&dpr=4&quality=100&sign=60f2bbed&sv=1)
 
