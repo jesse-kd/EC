@@ -102,28 +102,36 @@ Then, Check that the decoder chip works properly
 
 Circuit diagram
 
-
-![img](https://ykkim.gitbook.io/~gitbook/image?url=https%3A%2F%2Fuser-images.githubusercontent.com%2F38373000%2F192134563-72f68b29-4127-42ac-b064-2eda95a9a52a.png&width=768&dpr=4&quality=100&sign=60f2bbed&sv=1)
-
-image
+![4](https://github.com/user-attachments/assets/a94cdba2-d6a5-4615-816a-6c30a9100e73)
 
 #### Discussion
 
 1. Draw the truth table for the BCD 7-segment decoder with the 4-bit input.
 
-> Answer discussion questions
-
-```
-** YOUR Truth-table  goes here**
-```
+   | **Decimal** | **Input (BCD)** | **Segments (A–G)** |
+   | ----------- | --------------- | ------------------ |
+   | 0           | 0000            | 1111110            |
+   | 1           | 0001            | 0110000            |
+   | 2           | 0010            | 1101101            |
+   | 3           | 0011            | 1111001            |
+   | 4           | 0100            | 0110011            |
+   | 5           | 0101            | 1011011            |
+   | 6           | 0110            | 1011111            |
+   | 7           | 0111            | 1110000            |
+   | 8           | 1000            | 1111111            |
+   | 9           | 1001            | 1111011            |
 
 1. What are the common cathode and common anode of 7-segment display?
 
-> Answer discussion questions
+> In the 7-segment display, the LEDs are connected in two different configurations: the common cathode and the common anode. 
+>
+> Common cathode: LEDs are connected to the common ground, which means high voltage is required to light the LEDs.
+>
+> Common anode: LEDs are connected to the common voltage, which means low voltage is required to light the LEDs.
 
-1. Does the LED of a 7-segment display (common anode) pin turn ON when 'HIGH' is given to the LED pin from the MCU?
+2. Does the LED of a 7-segment display (common anode) pin turn ON when 'HIGH' is given to the LED pin from the MCU?
 
-> Answer discussion questions
+> To turn on the LED pin need to provide low voltage as the 7-segment display is common anode.
 
 ------
 
@@ -164,8 +172,6 @@ void sevensegment_display(uint8_t  num);
 
 Configure the MCU
 
-
-
 | Digital In for Button (B1) | Digital Out for 7-Segment                     |
 | :------------------------- | :-------------------------------------------- |
 | Digital In                 | Digital Out                                   |
@@ -174,7 +180,7 @@ Configure the MCU
 
 #### Code
 
-Your code goes here: [ADD Code LINK such as github](https://github.com/ykkimhgu/EC-student/)
+[EC github](https://github.com/jesse-kd/EC.git)
 
 
 ```
@@ -222,7 +228,7 @@ Experiment images and results
 
 ![1](https://github.com/user-attachments/assets/bd57357d-a65b-4a5d-8078-292e543748c6)
 
-Add [demo video link](https://github.com/ykkimhgu/course-doc/blob/master/course/lab/link/README.md)
+[YouTube Video](https://youtu.be/0pV-7Y5_ma8)
 
 ### Discussion
 
@@ -262,8 +268,6 @@ void sevensegment_decoder(uint8_t  num);
 
 Configure the MCU
 
-
-
 | Digital In for Button (B1) | Digital Out for 7-Segment                                    |
 | :------------------------- | :----------------------------------------------------------- |
 | Digital In                 | Digital Out                                                  |
@@ -272,9 +276,7 @@ Configure the MCU
 
 ### Code
 
-Your code goes here: [ADD Code LINK such as github](https://github.com/ykkimhgu/EC-student/)
-
-> Explain your source code with the necessary comments.
+[EC github](https://github.com/jesse-kd/EC.git)
 
 ```
 #include "stm32f4xx.h"
@@ -320,19 +322,16 @@ void setup(void)
 
 Circuit diagram
 
-> You need to include the circuit diagram
+![2](https://github.com/user-attachments/assets/1d823d75-b632-4d55-a251-056b1802f0e1)
 
-![img](https://ykkim.gitbook.io/~gitbook/image?url=https%3A%2F%2Fuser-images.githubusercontent.com%2F38373000%2F192134563-72f68b29-4127-42ac-b064-2eda95a9a52a.png&width=768&dpr=4&quality=100&sign=60f2bbed&sv=1)
-
-​								image
 
 ### Results
 
 Experiment images and results
 
-> Show experiment images /results
+![3](https://github.com/user-attachments/assets/0b54961c-d8c7-4604-a51f-379a72c78d4c)
 
-Add [demo video link](https://github.com/ykkimhgu/course-doc/blob/master/course/lab/link/README.md)
+[YouTube Video](https://youtu.be/0pV-7Y5_ma8)
 
 ### Discussion
 
@@ -345,7 +344,7 @@ Analyze the result and explain any other necessary discussion.
 Complete list of all references used (github, blog, paper, etc)
 
 ```
-
+https://ykkim.gitbook.io/ec/ec-course/tutorial/tutorial-7segment-display
 ```
 
 ------
