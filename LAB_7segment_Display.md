@@ -100,7 +100,7 @@ Then, Check that the decoder chip works properly
 
 Circuit diagram
 
-![1](C:\Users\const\OneDrive\바탕 화면\[LAB] 7segment Display\report\img\1.jpg)
+![4](https://github.com/user-attachments/assets/a94cdba2-d6a5-4615-816a-6c30a9100e73)
 
 #### Discussion
 
@@ -224,7 +224,7 @@ void setup(void)
 
 Experiment images and results
 
-![2](C:\Users\const\OneDrive\바탕 화면\[LAB] 7segment Display\report\img\2.jpg)
+![1](https://github.com/user-attachments/assets/bd57357d-a65b-4a5d-8078-292e543748c6)
 
 [YouTube Video](https://youtu.be/0pV-7Y5_ma8)
 
@@ -320,14 +320,14 @@ void setup(void)
 
 Circuit diagram
 
-![3](C:\Users\const\OneDrive\바탕 화면\[LAB] 7segment Display\report\img\3.jpg)
+![2](https://github.com/user-attachments/assets/1d823d75-b632-4d55-a251-056b1802f0e1)
 
 
 ### Results
 
 Experiment images and results
 
-![4](C:\Users\const\OneDrive\바탕 화면\[LAB] 7segment Display\report\img\4.jpg)
+![3](https://github.com/user-attachments/assets/0b54961c-d8c7-4604-a51f-379a72c78d4c)
 
 [YouTube Video](https://youtu.be/0pV-7Y5_ma8)
 
